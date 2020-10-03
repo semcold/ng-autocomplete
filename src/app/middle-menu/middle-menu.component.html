@@ -1,0 +1,52 @@
+<div class="middle-menu">
+	<div class="logo">
+		<img src="../../assets/img/logo.png" alt="">
+	</div>
+	<div class="burger-menu">
+		<button mat-button class="menu-button" [matMenuTriggerFor]="menu">
+			<img src="../../assets/img/menu.png" alt="">
+		</button>
+		<div class="title">
+			<a routerLink="/">
+				<span class="app-title">Каталог</span>
+			</a>
+		</div>
+		<mat-menu #menu="matMenu" class="mat-menu">
+			<button mat-menu-item>
+				<mat-icon >account_balance</mat-icon>
+				<span>Окна, двери, лестницы</span>
+			</button>
+			<button mat-menu-item>
+				<mat-icon>build</mat-icon>
+				<span>Инженерные системы</span>
+			</button>
+			<button mat-menu-item>
+				<mat-icon>face</mat-icon>
+				<span>Услуги</span>
+			</button>
+		</mat-menu>
+	</div>
+	<div class="search">
+		<app-autocomplete></app-autocomplete>
+		<div class="search-logo">
+			<img src="../../assets/img/search.svg" alt="">
+		</div>
+	</div>
+	<div class="list">
+		<div class="list-wrapper">
+			<img class="wrapper" src="../../assets/img/list-wrapper.png" alt="">
+			<img class="list1" src="../../assets/img/list1.png" alt="">
+			<img class="list2" src="../../assets/img/list2.png" alt="">
+			<img class="list3" src="../../assets/img/list3.png" alt="">
+		</div>
+		<img class="point" src="../../assets/img/point.png" alt="">
+		<div class="list-text">
+			<p>Список</p>
+		</div>
+	</div>
+	<div class="avatar">
+		<div class="avatar-text">
+			<p>А</p>
+		</div>
+	</div>
+</div>

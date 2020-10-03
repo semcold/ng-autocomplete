@@ -1,0 +1,106 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+.top-menu {
+
+	position: absolute;
+	width: 100vw; //1280px;
+	height: 2.5vw; //32px
+	left: 0px;
+	top: 0px;
+	display: flex;
+	background: #FAFBFC;
+
+	.navigation {
+		width: $h156;
+		height: $h20;
+		margin: $h6 $h630 $h6 $h87;
+		display: flex;
+
+		img.ico-navigation1 {
+			position: absolute;
+			width: 0.3125vw; //4px;
+			height: 0.30703125vw; //3.93px;
+			left: 7.109375vw; //91px;
+			top: 0.99453125vw; //12.73px;
+		}
+		img.ico-navigation2 {
+			position: absolute;
+			width: 0.9375vw;// 12px;
+			height: 1.125vw; //14.4px;
+			left: 6.796875vw; //87px;
+			top: 0.6875vw; //8.8px;
+		}
+		.text-navigation {
+			position: absolute;
+			width: 10.625vw; //136px;
+			height: $h20; //20px;
+			left: 8.359375vw; //107px;
+			top: $h6;
+		}
+		.text-navigation p {
+
+			@include parag;
+			margin: 0;
+
+		}
+	}
+
+
+
+	.menu {
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			padding-inline-start: 0;
+			margin: $h6 0;
+
+			li.tenders {
+				width: $h52;
+				margin-right: $h24;
+			}
+			li.podryadchik {
+				//width: $h108;
+				margin-right: $h24;
+			}
+			li.services {
+				//width: $h94;
+				margin-right: $h24;
+			}
+
+			li {
+				//margin: 0 1.25vw;
+				list-style-type: none;
+				height: $h20;
+
+				a {
+					text-decoration: none;
+					@include parag;
+				}
+
+			}
+			img{
+				margin-left: 0.5078125vw;
+			}
+
+		}
+
+
+	}
+
+}
+.line {
+	width: 100vw;
+	background: #d8d8d8;
+	// border: none;
+	//height: 0.0541666vh; //2px;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 0.0541666vh;
+	border-bottom: 0.0541666vh solid #d8d8d8;
+	position: absolute;
+	border: 1px solid #ECEFF1;
+	left: 0px;
+	top: $h32;
+}

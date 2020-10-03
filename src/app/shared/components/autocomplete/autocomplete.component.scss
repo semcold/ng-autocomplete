@@ -1,0 +1,20 @@
+@import "../../../../assets/styles/mixins";
+@import "../../../../assets/styles/variables";
+
+.ng-select.search-input {
+	position: absolute;
+	width: $h526;
+	height: $h40;
+	background: #FFFFFF;
+	border: 1px solid #ECEFF1;
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	img {
+		// position: absolute;
+		// width: $h20;
+		// height: $h20;
+		// left: 966px;
+		// top: 60px;
+	}
+}

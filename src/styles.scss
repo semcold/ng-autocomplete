@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./assets/styles/style.scss";
+//@import "~@ng-select/ng-select/themes/default.theme.css";
+
+.mat-menu-panel {
+	background: #FAFBFC;
+}
+.mat-menu-item {
+	color: $colormenu;
+	@include parag;
+}
+.mat-menu-item .mat-icon-no-color, .mat-menu-item-submenu-trigger::after {
+	color: $colormenu;
+}
+.ng-input {
+	
+	height: $h40;
+}
+.ng-select .ng-select-container {
+	padding-top: $h7;
+	padding-left: $h12;
+	@include parag14search;
+	height: $h40;
+
+}
+.ng-dropdown-panel .scroll-host {
+	border: 1px solid #ECEFF1;
+}
+input {
+	padding-left: $h12;
+	@include parag14search;
+}
+.ng-select .ng-clear-wrapper {
+	display: none;
+}

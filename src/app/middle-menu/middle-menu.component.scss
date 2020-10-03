@@ -1,0 +1,129 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+
+.middle-menu {
+	position: absolute;
+	width: 100vw;
+	height: 5.9375vw; //76
+	top: $h32;
+	left: 0;
+	display: flex;
+
+	.logo img {
+		margin: $h14 $h24 $h14 6.640625vw;
+		width: 17.265625vw;
+		height: 3.75vw;
+	}
+
+	.burger-menu {
+		background: #FED83D;
+		border-radius: $h4;
+		margin-top: $h18;
+		margin-right: $h24;
+		width: 9.0625vw; // 116px;
+		height: 3.125vw; // 40px;
+		display: flex;
+
+		.menu-button {
+			margin: $h10 $h8 $h10 $h16;
+			min-width: 0;
+			padding: 0;
+			line-height: normal;
+			.menu-button img {
+				width: $h20;
+				height: $h20;
+			}
+		}
+		.title {
+			width: $h56;
+			height: $h24;
+			margin: $h8 $h16 $h8 0;
+		}
+		.title a{
+			@include parag14;
+		}
+	}
+
+	.search {
+		width: $h526;
+		height: $h40;
+		margin-top: $h18;
+		margin-right: $h24;
+		border-radius: 4px;
+		.search-logo {
+			margin: $h10 $h10 $h10 38.75vw;
+			position: absolute;
+			.search-logo img {
+				width: $h20;
+				height: $h20;
+			}
+		}
+	}
+	.list {
+		width: $h111;
+		height: $h40;
+		margin-top: $h18;
+		margin-right: $h24;
+		background: #FAFBFC;
+		border: 1px solid #ECEFF1;
+		box-sizing: border-box;
+		border-radius: 4px;
+		display: flex;
+		.list-wrapper {
+			position: absolute;
+			margin: $h10 $h79 $h10 $h16;
+			width: $h16;
+			height: $h20;
+			img.wrapper {
+				position: absolute;
+				width: $h16;
+				height: $h20;
+			}
+			img.list1{
+				position: absolute;
+				margin: $h6 $h7 $h4 $h4;
+				width: $h5;
+				height: 1.5px;
+			}
+			img.list2{
+				position: absolute;
+				margin: $h10 $h4 $h4 $h4;
+				width: $h8;
+				height: 1.5px;
+			}
+			img.list3{
+				position: absolute;
+				margin: $h14 $h4 $h6 $h4;
+				width: $h8;
+				height: 1.5px;
+			}
+		}
+		img.point {
+			position: absolute;
+			width: $h10;
+			height: $h10;
+			margin: $h6 $h75 $h24 $h26;
+		}
+		.list-text {
+			width: 51px;
+			height: $h24;
+			margin: $h8 $h16 $h8 $h44;
+			@include parag14;
+		}
+	}
+
+	.avatar {
+		width: $h40;
+		height: $h40;
+		margin-top: $h18;
+		border-radius: 50%;
+		background: #9B51E0;
+		.avatar-text {
+			@include p14avatar;
+			width: $h10;
+			height: $h24;
+			margin: $h8 $h15;
+		}
+	}
+}

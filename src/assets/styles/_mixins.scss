@@ -1,0 +1,35 @@
+@import "variables";
+
+@mixin parag {
+	font-size: $font12;
+	line-height: $h20;
+	color: $colormenu;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
+}
+@mixin parag14 {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: $h14;
+	line-height: $h24;
+	color: #050F19;
+}
+@mixin parag14search {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
+	font-size: $h14;
+	line-height: $h24;
+	color: #708598;
+}
+
+@mixin p14avatar {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: $h14;
+	line-height: $h24;
+	color: #FFFFFF;
+}
