@@ -45,11 +45,7 @@
 
 		}
 	}
-
-
-
 	.menu {
-
 		ul {
 			display: flex;
 			flex-wrap: wrap;
@@ -83,22 +79,16 @@
 			img{
 				margin-left: 0.5078125vw;
 			}
-
 		}
-
-
 	}
-
 }
 .line {
 	width: 100vw;
 	background: #d8d8d8;
-	// border: none;
-	//height: 0.0541666vh; //2px;
 	padding: 0;
 	margin: 0;
-	padding-bottom: 0.0541666vh;
-	border-bottom: 0.0541666vh solid #d8d8d8;
+	// padding-bottom: $h1;
+	// border-bottom: $h1 solid #d8d8d8;
 	position: absolute;
 	border: 1px solid #ECEFF1;
 	left: 0px;

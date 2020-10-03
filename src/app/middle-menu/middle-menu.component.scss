@@ -126,3 +126,15 @@
 		}
 	}
 }
+.line {
+	width: 100vw;
+	background: #d8d8d8;
+	padding: 0;
+	margin: 0;
+	// padding-bottom: $h1;
+	// border-bottom: $h1 solid #d8d8d8;
+	position: absolute;
+	border: 1px solid #ECEFF1;
+	left: 0px;
+	top: $h108;
+}
