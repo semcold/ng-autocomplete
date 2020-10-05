@@ -24,22 +24,47 @@
 		height: 3.125vw; // 40px;
 		display: flex;
 
-		img.menu-button {
-			margin: $h10 $h8 $h10 $h16;
-			min-width: 0;
-			padding: 0;
-			line-height: normal;
+		.menu-button {
 			width: $h20;
 			height: $h20;
-			// img.menu-button {
-			// 	width: $h20;
-			// 	height: $h20;
-			// }
+			display: inline-block;
+			cursor: pointer;
+			margin: $h10 $h80 $h10 $h16;
+
+			.line1 {
+				width: $h15;
+				height: $h2;
+				background-color: #333;
+				position: absolute;
+  			margin: $h5 0.1953125vw 0 0.1953125vw;
+				transition: 0.4s;
+				border-radius: $h10;
+			}
+			.line2 {
+				width: $h15;
+				height: $h2;
+				background-color: #333;
+				position: absolute;
+  			margin: $h10 0.1953125vw 0 0.1953125vw;
+				transition: 0.4s;
+				border-radius: $h10;
+			}
+			.line3 {
+				width: $h15;
+				height: $h2;
+				background-color: #333;
+				position: absolute;
+  			margin: $h15 0.1953125vw $h5 0.1953125vw;
+				transition: 0.4s;
+				border-radius: $h10;
+			}
 		}
 		.title {
 			width: $h56;
 			height: $h24;
-			margin: $h8 $h16 $h8 0;
+			margin: $h8 $h16 $h8 $h44;
+			position: absolute;
+			@include parag14;
 		}
 		.title a{
 			@include parag14;

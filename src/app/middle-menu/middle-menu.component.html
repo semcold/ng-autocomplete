@@ -2,14 +2,17 @@
 	<div class="logo">
 		<img src="../../assets/img/logo.png" alt="">
 	</div>
-	<div class="burger-menu">
-		<button mat-button [matMenuTriggerFor]="menu">
-			<img class="menu-button" src="../../assets/img/menu.png" alt="">
-		</button>
+	<div class="burger-menu" mat-button [matMenuTriggerFor]="menu">
+		<div class="menu-button">
+			<div class="line1"></div>
+  		<div class="line2"></div>
+  		<div class="line3"></div>
+		</div>
+		<!-- <button class="menu-button" mat-button [matMenuTriggerFor]="menu">
+			<img  src="../../assets/img/menu.png" alt="">
+		</button> -->
 		<div class="title">
-			<a routerLink="/">
-				<span class="app-title">Каталог</span>
-			</a>
+			<p>Каталог</p>
 		</div>
 		<mat-menu #menu="matMenu" class="mat-menu">
 			<button mat-menu-item>
