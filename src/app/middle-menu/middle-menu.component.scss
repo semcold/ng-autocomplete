@@ -24,15 +24,17 @@
 		height: 3.125vw; // 40px;
 		display: flex;
 
-		.menu-button {
+		img.menu-button {
 			margin: $h10 $h8 $h10 $h16;
 			min-width: 0;
 			padding: 0;
 			line-height: normal;
-			.menu-button img {
-				width: $h20;
-				height: $h20;
-			}
+			width: $h20;
+			height: $h20;
+			// img.menu-button {
+			// 	width: $h20;
+			// 	height: $h20;
+			// }
 		}
 		.title {
 			width: $h56;
@@ -50,13 +52,11 @@
 		margin-top: $h18;
 		margin-right: $h24;
 		border-radius: 4px;
-		.search-logo {
+		img.search-logo {
 			margin: $h10 $h10 $h10 38.75vw;
 			position: absolute;
-			.search-logo img {
-				width: $h20;
-				height: $h20;
-			}
+			width: $h20;
+			height: $h20;
 		}
 	}
 	.list {

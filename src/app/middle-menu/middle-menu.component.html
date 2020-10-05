@@ -3,8 +3,8 @@
 		<img src="../../assets/img/logo.png" alt="">
 	</div>
 	<div class="burger-menu">
-		<button mat-button class="menu-button" [matMenuTriggerFor]="menu">
-			<img src="../../assets/img/menu.png" alt="">
+		<button mat-button [matMenuTriggerFor]="menu">
+			<img class="menu-button" src="../../assets/img/menu.png" alt="">
 		</button>
 		<div class="title">
 			<a routerLink="/">
@@ -28,9 +28,7 @@
 	</div>
 	<div class="search">
 		<app-autocomplete></app-autocomplete>
-		<div class="search-logo">
-			<img src="../../assets/img/search.svg" alt="">
-		</div>
+			<img class="search-logo" src="../../assets/img/search.svg" alt="">
 	</div>
 	<div class="list">
 		<div class="list-wrapper">
