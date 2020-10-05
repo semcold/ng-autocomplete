@@ -2,7 +2,6 @@
 @import "../../assets/styles/variables";
 
 .top-menu {
-
 	position: absolute;
 	width: 100vw; //1280px;
 	height: 2.5vw; //32px
@@ -46,47 +45,96 @@
 		}
 	}
 	.menu {
+		width: 25vw;
+		height: $h32;
 
-		ul.navigation-menu {
+		nav.navigation-menu {
+			position: absolute;
+			//margin: $h6 $h87 $h6 0;
 			display: flex;
-			flex-wrap: wrap;
-			padding-inline-start: 0;
-			margin: $h6 0;
-
-			li.tenders {
+			@include parag;
+			//@include parag;
+			.tenders {
 				width: $h52;
-				margin-right: $h24;
-			}
-			li.podryadchik {
-				//width: $h108;
-				margin-right: $h24;
-			}
-			li.services {
-				//width: $h94;
-				//margin-right: $h24;
-			}
-			// li.add-menu {
-			// 	transform: rotate(90deg);
-			// 	margin-left: 0.5078125vw;
-			// 	li.add-menu a {
-			// 		border: 1px solid #708598;
-			// 	}
-			// }
-
-			li {
-				list-style-type: none;
 				height: $h20;
-
-				a {
-					text-decoration: none;
-					@include parag;
-				}
-
+				//margin-right: $h24;
+				margin: $h6 $h24 $h6 0;
 			}
-			img{
-				margin-left: 0.5078125vw;
+			.podryadchik {
+				width: $h108;
+				height: $h20;
+				//margin-right: $h24;
+				margin: $h6 $h24 $h6 0;
 			}
+			.services {
+				width: $h94;
+				height: $h20;
+				margin: $h6 0.5078125vw $h6 0;
+				//margin-right: 0.5078125vw;
+			}
+			// img.add-menu-icon {
+			// 	width: $h10;
+			// 	height: $h6;
+			// }
+			img.menu-icon {
+				width: $h10;
+				height: $h6;
+				margin: 1.15234375vw 0 0.99609375vw 0;
+				// .menu-icon {
+				// 	width: $h10;
+				// 	height: $h6;
+				// 	margin: 1.15234375vw 0 0.99609375vw 0;
+				// }
+			}
+
+			// a {
+			// 	text-decoration: none;
+			// 	@include parag;
+			// }
 		}
+		// ul.navigation-menu {
+		// 	display: flex;
+		// 	flex-wrap: wrap;
+		// 	padding-inline-start: 0;
+
+
+		// 	li.tenders {
+		// 		width: $h52;
+		// 		margin-right: $h24;
+		// 	}
+		// 	li.podryadchik {
+		// 		//width: $h108;
+		// 		margin-right: $h24;
+		// 	}
+		// 	li.services {
+		// 		//width: $h94;
+		// 		//margin-right: $h24;
+		// 	}
+		// 	li.add-menu {
+		// 		//position: absolute;
+		// 		//margin: 1.15234375vw 89.5px 12.75px 1181.5px;
+		// 		margin-left: 0.5078125vw;
+
+		// 		img.add-menu-icon {
+		// 			width: 0.3515625vw;
+		// 			height: 0.703125vw;
+		// 		}
+		// 	}
+
+		// 	li {
+		// 		list-style-type: none;
+		// 		height: $h20;
+
+		// 		a {
+		// 			text-decoration: none;
+		// 			@include parag;
+		// 		}
+
+		// 	}
+		// 	img{
+		// 		margin-left: 0.5078125vw;
+		// 	}
+		// }
 	}
 }
 .line {
