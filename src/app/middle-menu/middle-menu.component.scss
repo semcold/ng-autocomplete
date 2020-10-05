@@ -76,7 +76,7 @@
 		height: $h40;
 		margin-top: $h18;
 		margin-right: $h24;
-		border-radius: 4px;
+		border-radius: $h4;
 		img.search-logo {
 			margin: $h10 $h10 $h10 38.75vw;
 			position: absolute;
@@ -90,38 +90,62 @@
 		margin-top: $h18;
 		margin-right: $h24;
 		background: #FAFBFC;
-		border: 1px solid #ECEFF1;
+		border: $h1 solid #ECEFF1;
 		box-sizing: border-box;
-		border-radius: 4px;
+		border-radius: $h4;
 		display: flex;
 		.list-wrapper {
 			position: absolute;
-			margin: $h10 $h79 $h10 $h16;
+			margin: 0.6640625vw 6.0546875vw 0.6640625vw 1.1328125vw;
+			border: $h1-5 solid #708598;
 			width: $h16;
 			height: $h20;
-			img.wrapper {
+			border-radius: $h3;
+
+			// .wrapper {
+			// 	position: absolute;
+			// 	margin: $h10 $h79 $h10 $h16;
+			// 	border: $h2 solid #708598;
+			// 	width: $h16;
+			// 	height: $h20;
+			// 	border-radius: $h4;
+			// }
+			.list1{
 				position: absolute;
-				width: $h16;
-				height: $h20;
-			}
-			img.list1{
-				position: absolute;
-				margin: $h6 $h7 $h4 $h4;
+				background-color: #708598;
+				margin: $h6 $h7 0 $h4;
 				width: $h5;
-				height: 1.5px;
+				height: $h1;
+				border-radius: $h4;
 			}
-			img.list2{
+			.list2{
 				position: absolute;
-				margin: $h10 $h4 $h4 $h4;
+				background-color: #708598;
+				margin: $h10 $h4 0 $h4;
 				width: $h8;
-				height: 1.5px;
+				height: $h1;
+				border-radius: $h4;
 			}
-			img.list3{
+			.list3{
 				position: absolute;
+				background-color: #708598;
 				margin: $h14 $h4 $h6 $h4;
 				width: $h8;
-				height: 1.5px;
+				height: $h1;
+				border-radius: $h4;
 			}
+			// img.list2{
+			// 	position: absolute;
+			// 	margin: $h10 $h4 $h4 $h4;
+			// 	width: $h8;
+			// 	height: 1.5px;
+			// }
+			// img.list3{
+			// 	position: absolute;
+			// 	margin: $h14 $h4 $h6 $h4;
+			// 	width: $h8;
+			// 	height: 1.5px;
+			// }
 		}
 		img.point {
 			position: absolute;
@@ -159,7 +183,7 @@
 	// padding-bottom: $h1;
 	// border-bottom: $h1 solid #d8d8d8;
 	position: absolute;
-	border: 1px solid #ECEFF1;
-	left: 0px;
+	border: $h1 solid #ECEFF1;
+	left: 0;
 	top: $h108;
 }
